@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 188, 213);
+}
+
+nav {
+    background-color: rgb(255, 0, 93);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Segoe UI';
+
+}
+
+a:active {
+    color: white;
+}
+
+.projects {
+    background-color: rgb(255, 164, 197);
+    padding: 20px;
+    margin: 20px 200px;
+    border-radius: 10px;
+}

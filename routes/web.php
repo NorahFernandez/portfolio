@@ -1,13 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/projects', function () {
-    return view('projects');
+    $projects = DB::table('projects')
+        ->get();
+
+    return view('projects')->with('projects', $projects);
 });
 
 Route::get('/contact', function () {

@@ -19,7 +19,11 @@
         </nav>
     </header>
     <main>
-        @yield('content')
+        <div class="main">
+            <div class="mainItems">
+                @yield('content')
+            </div>
+        </div>
     </main>
     <footer>
 

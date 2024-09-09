@@ -2,7 +2,6 @@
 
     @section('content')
 
-        <div>
             <h1>My Projects</h1>
             <p>Here are some of my projects:</p>
             @foreach ($projects as $project)
@@ -11,6 +10,5 @@
                     <p>{{$project->description}}</p>
                 </div>
             @endforeach
-        </div>
 
     @endsection

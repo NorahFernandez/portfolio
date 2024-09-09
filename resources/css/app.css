@@ -5,13 +5,18 @@
 
 body {
     background-color: rgb(255, 188, 213);
-    /* background-image: url('/../public/images/2023-11-14_10.42.24.png');
+    background-image: url('/../public/images/Illustration2.png');
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 nav {
     background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    width: 80px;
+    border-radius: 100%;
 }
 
 .main {
@@ -77,11 +82,8 @@ a {
 }
 
 a:active {
-    color: white;
+    color: rgb(255, 58, 130);
 }
-
-
-
 
 .projects {
     background-color: rgb(255, 164, 197);

@@ -19,5 +19,9 @@ Route::get('/contact', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('login/login');
+});
+
+Route::get('/register', function () {
+    return view('login/register');
 });

@@ -4,11 +4,10 @@
         <h1>Login</h1>
         <p>Please login to access the dashboard</p>
 
-        <form action="">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
+        <form method="POST" action="{{route('login')}}">
+            @csrf
+            <input type="email" name="email" required autofocus>
+            <input type="password" name="password" required>
             <button type="submit">Login</button>
         </form>
     @endsection

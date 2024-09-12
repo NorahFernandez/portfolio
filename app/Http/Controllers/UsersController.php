@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
@@ -29,5 +30,32 @@ class UsersController extends Controller
         return redirect('/login');
     }
 
+    public function showLoginForm(){
+        return view('login.login');
+    }
+
+    public function login(Request $request){
+        // Validate the user
+        $data = request()->validate([
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+
+        // Check if the user exists
+        $user = User::where('email', $data['email'])->first();
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            return redirect()->intended('/');
+        }
+
+
+
+        return back()->withErrors(['email' => 'invalid credentials'])->onlyInput('email');
+
+
+    }
 
 }

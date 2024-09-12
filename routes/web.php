@@ -28,3 +28,5 @@ Route::get('/register', function () {
 });
 
 Route::post('/register', [UsersController::class, 'store']);
+Route::get('/login', [UsersController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [UsersController::class, 'login']);

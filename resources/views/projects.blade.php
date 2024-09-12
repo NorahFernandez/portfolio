@@ -8,6 +8,13 @@
                 <div class="projects">
                     <h2>Title:{{$project->title}}</h2>
                     <p>{{$project->description}}</p>
+                    @auth
+                        @if(auth()->user()->id == 2)
+                            <form action="">
+                                <button>edit</button>
+                            </form>
+                        @endif
+                    @endauth
                 </div>
             @endforeach
 

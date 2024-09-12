@@ -51,11 +51,6 @@ class UsersController extends Controller
             return redirect()->intended('/');
         }
 
-
-
         return back()->withErrors(['email' => 'invalid credentials'])->onlyInput('email');
-
-
     }
-
 }

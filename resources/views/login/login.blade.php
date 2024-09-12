@@ -11,7 +11,4 @@
             <input type="password" name="password" id="password">
             <button type="submit">Login</button>
         </form>
-
-        <p>no acount? make one</p>
-        <a href="/register">go</a>
     @endsection

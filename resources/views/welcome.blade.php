@@ -12,5 +12,28 @@
             </a>
         </div>
 
+        <div class="toProjects">
+            <a href="/projects">
+            <img src="/images/2023-11-14_10.42.24.png" alt="">
+            <p>to my projects</p>
+            </a>
+        </div>
+        <div class="toProjects">
+            <a href="/projects">
+            <img src="/images/2023-11-14_10.42.24.png" alt="">
+            <p>to my projects</p>
+            </a>
+        </div>
+        <div class="toProjects">
+            <a href="/projects">
+            <img src="/images/2023-11-14_10.42.24.png" alt="">
+            <p>to my projects</p>
+            </a>
+        </div>
+
+
+
+        <a href="/register">go</a>
+
     @endsection
 

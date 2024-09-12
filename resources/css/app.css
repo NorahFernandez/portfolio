@@ -8,6 +8,7 @@ body {
     background-image: url('/../public/images/Illustration2.png');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 nav {
@@ -15,20 +16,30 @@ nav {
 }
 
 .logo {
-    width: 80px;
+    width: 60px;
     border-radius: 100%;
 }
 
 .main {
     max-width: 60%;
     margin: 0 auto;
-    min-height: 918px;
+    min-height: 878px;
     background-color: rgb(255, 58, 130);
+
+    height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
 }
 
 .mainItems{
     display: grid;
     justify-items: center;
+    max-height: 50px;
 }
 
 .toProjects {
